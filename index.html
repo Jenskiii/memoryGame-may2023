@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+	<title>Cardgame</title>
+	<link rel="shortcut icon" href="#">
+	<link href="css/game.css" rel="stylesheet">
+</head>
+
+<body>
+			
+<div class="container">
+	<h1 id="displayName">Welcome</h1>
+	<h2 id="highscore"></h2>
+	<h2 id="highscore5"></h2>
+	<h2 id="highscore6"></h2>
+	<div class="options">
+		<div class="options__board">
+			<select name="fieldBoard" id="fieldBoard" class="field" >
+				<option value="1" disabled selected>Choose a Field</option>
+				<option value="4">4 x 4</option>
+				<option value="5">5 x 5</option>
+				<option value="6">6 x 6</option>
+			</select>
+		</div>
+
+
+			<p class="attempt">Attempts:<span id="attempts"></span></p>
+			<p class="attempt">Sets: <span id="score"></span></p>
+
+		<div class="options__btn">
+			<button class="btn" id="btn3"">Reset</button>
+		</div>
+	</div> 
+
+
+<div id="field"></div>
+
+<p id="timer"></p>
+</div>	
+
+
+	<script src="js/memory.js" type="module"></script>
+</body>
+
+</html>
